@@ -1,0 +1,306 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    link(rel="stylesheet", href="css/all.min.css")
+    link(rel="stylesheet", href="css/bootstrap.min.css")
+    link(rel="stylesheet", href="css/bootstrap.min.css.map")
+    link(rel="stylesheet", href="style.css")
+    title Coders Area
+  body 
+    nav
+      .container
+        .logo
+          span.fw-bold Elzero
+        .links.d-flex.align-items-center
+          ul.list-unstyled.d-flex.m-0
+            li #[a(href="#articles") Articles]
+            li #[a(href="#gallery") Gallery]
+            li #[a(href="#features") Features]
+            li
+              a(href="#") Other Links
+              .other
+                .con
+                  .img
+                    img(src="images/img8.jpg", alt="")
+                  ul.link.list-unstyled
+                    li #[a(href="#testimonials") #[i.fa-regular.fa-comments] Testimonials]
+                    li #[a(href="#team-members") #[i.fa-regular.fa-user] Team Members]
+                    li #[a(href="#services") #[i.fa-regular.fa-building] Services]
+                    li #[a(href="#our-skills") #[i.fa-regular.fa-circle-check] Our Skills]
+                    li #[a(href="#how-it-works") #[i.fa-regular.fa-clipboard] How It Works]
+                  ul.link.list-unstyled
+                    li #[a(href="#events") #[i.fa-regular.fa-calendar] Events]
+                    li #[a(href="#pricing-plans") #[i.fa-solid.fa-server] Pricing Plans]
+                    li #[a(href="#top-videos") #[i.fa-regular.fa-circle-play] Top Videos]
+                    li #[a(href="#stats") #[i.fa-solid.fa-chart-bar] Stats]
+                    li #[a(href="#request-a-discount") #[i.fa-solid.fa-percent] Request A Discount]
+    header
+      .container
+        .landing
+          .text
+            h3 welcome, to my world
+            p Here im gonna share everything about my life. Books im reading, Games im Plaing, Stories and Events
+          .img
+            img(src="images/img9.jpg", alt="" width="400px")
+        .arrow
+          i.fa-solid.fa-angles-down
+    .articles#articles
+      .container
+        .title
+          h3 articles
+        .cards
+          .card
+            .image
+              img(src="images/img2.jpg", alt="")
+            include includes/card.pug
+          .card
+            .image
+              img(src="images/img10.jpg", alt="")
+            include includes/card.pug
+          .card
+            .image
+              img(src="images/img7.jpg", alt="")
+            include includes/card.pug
+          .card
+            .image
+              img(src="images/img4.jpg", alt="")
+            include includes/card.pug
+          .card
+            .image
+              img(src="images/img2.jpg", alt="")
+            include includes/card.pug
+          .card
+            .image
+              img(src="images/img10.jpg", alt="")
+            include includes/card.pug
+          .card
+            .image
+              img(src="images/img7.jpg", alt="")
+            include includes/card.pug
+          .card
+            .image
+              img(src="images/img4.jpg", alt="")
+            include includes/card.pug
+    .gallery#gallery
+      .container
+        .title
+          h3 gallery
+        .cards
+          .card
+            img(src="images/img3.jpg", alt="")
+          .card
+            img(src="images/img3.jpg", alt="")
+          .card
+            img(src="images/img3.jpg", alt="")
+          .card
+            img(src="images/img3.jpg", alt="")
+          .card
+            img(src="images/img3.jpg", alt="")
+          .card
+            img(src="images/img3.jpg", alt="")
+    .features#features
+      .container
+        .title
+          h3 features
+        .cards
+          .card.red
+            .image
+              img(src="images/img6.jpg", alt="")
+            .text
+              h2 quality
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              button more
+          .card.blue
+            .image
+              img(src="images/img5.jpg", alt="")
+            .text
+              h2 time
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              button more
+          .card.orange
+            .image
+              img(src="images/img1.jpg", alt="")
+            .text
+              h2 quantity
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              button more
+  .testimonials#testimonials
+    .container
+      .title
+        h3 testimonials
+      .comments
+        .comment
+          img(src="images/img11.jpg", alt="")
+          .text
+            h4 A. yellow warbler
+            h6 devOps engineer
+            .stars
+              ul.list-unstyled
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-regular.fa-star]
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos porro consectetur tenetur hic aspernatur
+        .comment
+          img(src="images/img12.jpeg", alt="")
+          .text
+            h4 green parrot
+            h6 UI/UX designer
+            .stars
+              ul.list-unstyled
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-regular.fa-star]
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos porro consectetur tenetur hic aspernatur
+        .comment
+          img(src="images/img13.jpg", alt="")
+          .text
+            h4 T. blue magpie
+            h6 back end developer
+            .stars
+              ul.list-unstyled
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-regular.fa-star]
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos porro consectetur tenetur hic aspernatur
+        .comment
+          img(src="images/img14.jpg", alt="")
+          .text
+            h4 Lazuli bunting
+            h6 data scientist
+            .stars
+              ul.list-unstyled
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos porro consectetur tenetur hic aspernatur
+        .comment
+          img(src="images/img15.jpg", alt="")
+          .text
+            h4 hoopoe raised up
+            h6 full stack developer
+            .stars
+              ul.list-unstyled
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-regular.fa-star]
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos porro consectetur tenetur hic aspernatur
+        .comment
+          img(src="images/img16.jpg", alt="")
+          .text
+            h4 Indigo bunting
+            h6 front end developer
+            .stars
+              ul.list-unstyled
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-solid.fa-star]
+                li #[i.fa-regular.fa-star]
+                li #[i.fa-regular.fa-star]
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos porro consectetur tenetur hic aspernatur
+  .team-members#team-members
+    .container
+      .title
+        h3 team members
+      .members
+        .member
+          img(src="images/img17.jpg", alt="")
+          include includes/member.pug
+        .member
+          img(src="images/img18.jpg", alt="")
+          include includes/member.pug
+        .member
+          img(src="images/img19.jpg", alt="")
+          include includes/member.pug
+        .member
+          img(src="images/img20.jpg", alt="")
+          include includes/member.pug
+        .member
+          img(src="images/img21.jpg", alt="")
+          include includes/member.pug
+        .member
+          img(src="images/img22.jpg", alt="")
+          include includes/member.pug
+        .member
+          img(src="images/img23.jpeg", alt="")
+          include includes/member.pug
+        .member
+          img(src="images/img24.jpg", alt="")
+          include includes/member.pug
+  .services#services
+    .container
+      .title
+        h3 services
+      .cards
+        .card
+          .icon
+            //- i.fa-solid.fa-person-rifle
+            <i class="fa-solid fa-user-shield"></i>
+            h3 security
+          .foot
+            h2 01
+            include includes/sevices.pug
+        .card
+          .icon
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            h3 fixing issues
+          .foot
+            h2 02
+            include includes/sevices.pug
+        .card
+          .icon
+            <i class="fa-solid fa-map-location-dot"></i>
+            h3 location
+          .foot
+            h2 03
+            include includes/sevices.pug
+        .card
+          .icon
+            <i class="fa-solid fa-laptop-code"></i>
+            h3 coding
+          .foot
+            h2 04
+            include includes/sevices.pug
+        .card
+          .icon
+            <i class="fa-solid fa-palette"></i>
+            h3 art
+          .foot
+            h2 05
+            include includes/sevices.pug
+        .card
+          .icon
+            <i class="fa-solid fa-bullhorn"></i>
+            h3 marketing
+          .foot
+            h2 06
+            include includes/sevices.pug
+  .our-skills#our-skills
+    .container
+      .title
+        h3 our skills
+      .con
+        .image
+          img(src="images/monitor.png", alt="")
+        //- .skills
+        .skill
+          .name
+            p html 
+            span 80%
+          .persent #[span]
+  script(src="js/main.js")
